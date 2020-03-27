@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import FirstComponent from './components/learning-examples/FirstComponent'
+import SecondComponent from './components/learning-examples/SecondComponent'
+import ThirdComponent from './components/learning-examples/ThirdComponent'
 import './App.css';
  
 class App extends Component {
@@ -6,33 +9,25 @@ class App extends Component {
     return (
       <div className="App">
         My Hello World
-        <FirstComponent></FirstComponent>
-        <SecondComponent></SecondComponent>
+        <LearningComponents></LearningComponents>
       </div>
     );
   }
 }
 
-//Class Component
-class FirstComponent extends Component {
+
+
+class LearningComponents extends Component {
   render() {
     return (
-      <div className="FirstComponent">
-        FirstComponent
+      <div className="LearningComponents">
+         My Hello World
+         <FirstComponent></FirstComponent>
+         <SecondComponent></SecondComponent>
+         <ThirdComponent></ThirdComponent>
       </div>
     );
   }
 }
-
-class SecondComponent extends Component {
-  render() {
-    return (
-      <div className="SecondComponent">
-        SecondComponent
-      </div>
-    );
-  }
-}
-
 
 export default App;
