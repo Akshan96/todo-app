@@ -6,11 +6,14 @@ class App extends Component {
     return (
       <div className="App">
         My Hello World
+        <FirstComponent></FirstComponent>
+        <SecondComponent></SecondComponent>
       </div>
     );
   }
 }
 
+//Class Component
 class FirstComponent extends Component {
   render() {
     return (
@@ -20,5 +23,16 @@ class FirstComponent extends Component {
     );
   }
 }
+
+class SecondComponent extends Component {
+  render() {
+    return (
+      <div className="SecondComponent">
+        SecondComponent
+      </div>
+    );
+  }
+}
+
 
 export default App;
